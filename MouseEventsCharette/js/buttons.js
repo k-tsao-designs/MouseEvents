@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 	$('#start').click('click touchstart', function() {
-		$(this).animate({top: '-100%'}, 500);
+		$(this).animate({top: '-100px'}, 500);
 		//$(this).animate({opacity: '0'}, 2000);
 
 		$("#start").click(function(){
@@ -33,12 +33,13 @@ $(document).ready(function() {
 		$(this).css('background-color', 'pink').slideUp(2000).slideDown(2000);
 	});
 
+	/*
 	$('#btn6').click(function(){
-		$(this).css('color' 'red' function() {
-			$(this).css('color' 'orange' function() {
-				$(this).css('color' 'yellow' function() {
-					$(this).css('color' 'green' function() {
-						$(this).css('color' 'blue' function() {
+		$(this).css('color' 'red') function() {
+			$(this).css('color' 'orange') function() {
+				$(this).css('color' 'yellow') function() {
+					$(this).css('color' 'green') function() {
+						$(this).css('color' 'blue') function() {
 							$(this).css('color' 'violet')
 						});	
 					});
@@ -46,8 +47,13 @@ $(document).ready(function() {
 			});
 		});
 	});
+*/
 
 	$('#btn7').click(function(){
+		$(this).css('background-color', 'red').css('color', 'yellow');
+	});
+
+	$('#btn8').click(function(){
 		$(this).css('background-color', 'red').css('color', 'yellow');
 	});
 
@@ -60,6 +66,18 @@ $(document).ready(function() {
 	});
 
 	$('#btn13').click(function(){
+		$(this).addClass('animated bounceOutRight');
+	});
+
+	$('#btn14').click(function(){
+		$(this).css('font' 'Helvetica');
+	});
+
+	$('#btn16').click(function(){
+		$(this).animate({height: '+=10%', width: '+=10%'});
+	});
+
+	$('#btn17').click(function(){
 		$(this).addClass('animated bounceOutRight');
 	});
 
